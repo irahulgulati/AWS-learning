@@ -20,7 +20,7 @@ This is NOT a guide on how to develop websites on AWS. This uses a website as an
 This guide takes you through a maturity process from the most basic webpage to an extremely cheap scalable web application. The small app you will build does not matter. It can do anything you want, just keep it simple.
 Need an idea? Here: Fortune-of-the-Day - Display a random fortune each page load, have a box at the bottom and a submit button to add a new fortune to the random fortune list.
 
-- [ ] Account Basics
+- [x] Account Basics (Completed on 4/03/2020)
 1. Create an IAM user for your personal use.
 2. Set up MFA for your root user, turn off all root user API keys.
 3. Set up Billing Alerts for anything over a few dollars.
