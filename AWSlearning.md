@@ -27,7 +27,7 @@ Need an idea? Here: Fortune-of-the-Day - Display a random fortune each page load
 4. Configure the AWS CLI for your user using API credentials.
 5. Checkpoint: You can use the AWS CLI to interrogate information about your AWS account.
 
-- [ ]  Web Hosting Basics
+- [x]  Web Hosting Basics (Completed on 5/03/2020)
 1. Deploy a EC2 VM and host a simple static "Fortune-of-the-Day Coming Soon" web page.
 2. Take a snapshot of your VM, delete the VM, and deploy a new one from the snapshot. Basically disk backup + disk restore.
 3. Checkpoint: You can view a simple HTML page served from your EC2 instance.
