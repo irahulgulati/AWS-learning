@@ -32,10 +32,13 @@ Need an idea? Here: Fortune-of-the-Day - Display a random fortune each page load
 2. Take a snapshot of your VM, delete the VM, and deploy a new one from the snapshot. Basically disk backup + disk restore.
 3. Checkpoint: You can view a simple HTML page served from your EC2 instance.
 
-- [ ]  Auto Scaling
+- [x]  Auto Scaling (Completed on 6/03/2020)
 1. Create an AMI from that VM and put it in an autoscaling group so one VM always exists.
 2. Put a Elastic Load Balancer infront of that VM and load balance between two Availability Zones (one EC2 in each AZ).
 3. Checkpoint: You can view a simple HTML page served from both of your EC2 instances. You can turn one off and your website is still accessible.
+	Findings - 1. An elastic load balancer can have two VMs from different Availability zones but not from different regions.
+				2. Desired capacity should be set greater that or equal to min value and less than max value in auto-scaling group.
+				3. The desired amount represents the "current amount" of instances in your auto-scaling group which means that auto-scaling group will launch as many instances as specified in desired section of auto-scaling group.
 
 - [ ]  External Data
 1. Create a DynamoDB table and experiment with loading and retrieving data manually, then do the same via a script on your local machine.
